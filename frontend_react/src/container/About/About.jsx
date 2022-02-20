@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { AppWrap } from '../../wrapper';
+
 import { images } from '../../constants';
 import './About.scss';
 import { urlFor, client } from '../../client';
@@ -10,7 +12,6 @@ import { urlFor, client } from '../../client';
   {title: 'UI/UX Design', description: 'I understand what goes into a good user experience.', imgUrl: images.about02},
   {title: 'Front End Development', description: 'I am a good front end developer', imgUrl: images.about03},
   {title: 'Back End Development', description: 'I can build out APIs and manage a back end', imgUrl: images.about04}
-
 ] */
 
 const About = () => {
@@ -55,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About
+export default AppWrap(About, 'about');
