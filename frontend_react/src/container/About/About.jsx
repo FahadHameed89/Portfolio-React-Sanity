@@ -34,7 +34,7 @@ const About = () => {
       <span> Good Design</span>
       <br />
       means
-      <span> Good Business123</span>
+      <span> Good Business</span>
       </h2>
 
       <div className="app__profiles">
